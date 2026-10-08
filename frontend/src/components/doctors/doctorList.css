@@ -1,0 +1,37 @@
+.doctor-section {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.doctor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.doctor-list li {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.doctor-message {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.doctor-message--error {
+  color: #b3392f;
+}
+
+.doctor-retry {
+  margin-top: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
