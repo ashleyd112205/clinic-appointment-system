@@ -1,7 +1,13 @@
 import RegisterForm from "./pages/patient/RegisterForm";
+import LoginForm from "./pages/patient/LoginForm";
 
 function App() {
-  return <RegisterForm />;
+  return (
+    <>
+      <RegisterForm />
+      <LoginForm />
+    </>
+  );
 }
 
 export default App;
