@@ -1,4 +1,5 @@
 const express = require("express");
+
 const {
   createPatient,
   findPatientByEmail
@@ -31,6 +32,33 @@ router.post("/register", (req, res) => {
 
   res.status(201).json({
     message: "Patient registered successfully.",
+    patient: {
+      id: patient.id,
+      name: patient.name,
+      email: patient.email
+    }
+  });
+});
+
+router.post("/login", (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({
+      message: "Email and password are required."
+    });
+  }
+
+  const patient = findPatientByEmail(email);
+
+  if (!patient || patient.password !== password) {
+    return res.status(401).json({
+      message: "Invalid email or password."
+    });
+  }
+
+  res.status(200).json({
+    message: "Patient login successful.",
     patient: {
       id: patient.id,
       name: patient.name,
