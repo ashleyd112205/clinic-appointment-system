@@ -1,0 +1,28 @@
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 320px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.book-form select,
+.book-form input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.book-form button {
+  margin-top: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.book-message {
+  color: green;
+  margin: 8px 0 0;
+}
