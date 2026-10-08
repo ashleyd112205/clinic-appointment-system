@@ -1,0 +1,27 @@
+.appointments-container {
+  width: 600px;
+  max-width: 95%;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointments-table th,
+.appointments-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.status-booked {
+  color: green;
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: red;
+  font-weight: bold;
+}
