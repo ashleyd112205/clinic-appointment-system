@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const patientRoutes = require("./routes/patientRoutes");
+const doctorRoutes = require("./routes/doctorRoutes");
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/patients", patientRoutes);
+app.use("/api/doctors", doctorRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
